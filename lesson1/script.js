@@ -4,9 +4,7 @@ mainList = {
 	money: +prompt("Ваш бюджет?", ""),
 	name: prompt("Название вашего магазина?", ""),
 	shopGoods: [],
-	emp: {
-		employers: {}
-	},
+	employers: {},
 	open: true
 };
 

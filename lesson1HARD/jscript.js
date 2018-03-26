@@ -5,4 +5,4 @@ for (var i = 0; i<5; i++){
 	num = parseInt(num/10);
 }
 console.log(result);
-console.log(result **= 3);
+alert(result **= 3);
