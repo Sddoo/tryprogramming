@@ -1,5 +1,8 @@
 let time = 19;
 
+if (!!( a && b ) == (a && b))
+	alert("TRUE");
+
 let mainList = {
 	money: +prompt("Ваш бюджет?"),
 	name: prompt("Название вашего магазина?"),
@@ -10,8 +13,10 @@ let mainList = {
 
 for (let i = 0; i<3; i++){
 	let a = prompt("Какой тип товаров будем продавать?");
-	if ((typeof(a)) === "string" && (typeof(a)) !== null && a!=='' && a.length < 50)
+	if ((typeof(a)) === "string" && (typeof(a)) !== null && a!='' && a.length < 50)
 		mainList.shopGoods[i] = a;
+	else
+		i--;
 }
 
 /*let i = 0;
@@ -31,8 +36,6 @@ do{
 		i++;
 	}
 }while(i<3);*/
-
-console.log(mainList.shopGoods);
 
 if (time < 0){
 	console.log("Такого не может быть");
