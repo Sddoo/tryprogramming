@@ -10,7 +10,7 @@ function start(){ //Фукнция ввода бюджета и названия
 	time = 19;
 };
 
-//start();
+start();
 
 let mainList = {
 	money: totalMoney,
@@ -73,6 +73,12 @@ let mainList = {
         mainList.shopItems.sort();
 	}
 };
+
+chooseGoods();
+workTime(time);
+moneyForDay();
+hireEmployee();
+chooseShopItems();
 
 mainList.shopItems.forEach(function(item,i,arr){
 	if (i==0){
