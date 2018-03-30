@@ -5,7 +5,7 @@ let time, totalMoney, theName, price;
 function start(){
 	do {
 		totalMoney = prompt("Ваш бюджет?");
-	} while (isNaN(totalMoney) || totalMoney === '' || totalMoney === null);
+	} while (isNaN(totalMoney) || totalMoney == '' || totalMoney == null);
 	theName = prompt("название вашего магазина?").toUpperCase();
 	time = 19;
 }
