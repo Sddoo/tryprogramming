@@ -74,13 +74,13 @@ let mainList = {
 	}
 };
 
-chooseGoods();
-workTime(time);
-moneyForDay();
-hireEmployee();
-chooseShopItems();
+mainList.chooseGoods();
+mainList.workTime(time);
+mainList.moneyForDay();
+mainList.hireEmployee();
+mainList.chooseShopItems();
 
-mainList.shopItems.forEach(function(item,i,arr){
+mainList.shopItems.forEach(function(item,i){
 	if (i==0){
 		document.write("У нас вы можете купить: " + '<br />');
 	}
@@ -88,6 +88,6 @@ mainList.shopItems.forEach(function(item,i,arr){
 })
 
 console.log("У нас есть в наличии: ");
-for (let key in mainList.shopGoods){
-	console.log(key + ': ' + mainList.shopGoods[key]);
+for (let key in mainList){
+	console.log(key);
 }
