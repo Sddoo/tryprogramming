@@ -1,20 +1,24 @@
 //Вопрос
-let answer = prompt("Как вы относитесь к техинике Apple?", "");
+let ans = prompt("Как вы относитесь к техинике Apple?", "");
+let answer = document.getElementById('prompt');
+answer.textContent = ans;
+
 
 //Изменение порядка в меню, доабавление пятого элемента
 let menuItem = document.getElementsByClassName('menu-item');
 let parentId = menuItem[2].parentNode;
 parentId.insertBefore(menuItem[2],menuItem[1]);
 //
-let punct = document.createElement('li');
-punct.textContent = 'Пятый пункт';
-punct.classList.add('menu-item');
-parentId.appendChild(punct);
+let point = document.createElement('li');
+point.textContent = 'Пятый пункт';
+point.classList.add('menu-item');
+parentId.appendChild(point);
 
 //Изменение фоновой картинки
 
 let img = document.querySelector('body');
 img.style.background = 'url(img/apple_true.jpg) center no-repeat';
+img.style.backgroundSize = 'cover';
 
 //Изменение заголовка !
 
