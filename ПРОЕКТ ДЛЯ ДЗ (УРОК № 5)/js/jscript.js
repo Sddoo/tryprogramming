@@ -13,4 +13,3 @@ let fieldTime = document.querySelector("#time");
 let fieldBudget = document.querySelector("#budget");
 //Поля имен сотрудников
 let fieldsOfEmployees = document.querySelectorAll(".hire-employers-item");
-console.log(fieldsOfEmployees);
