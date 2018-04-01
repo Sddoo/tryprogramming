@@ -18,6 +18,10 @@ let goodsCategories = document.getElementsByClassName('goods-item');
 //3 кнопки
 let parentId = document.getElementsByClassName('main-functions');
 let buttons = parentId[0].getElementsByTagName('button');
+let button1 = buttons[0];
+let button2 = buttons[1];
+let button3 = buttons[2];
+console.log(button3);
 //Поля ввода товаров, времени и расчета бюджета
 let fieldItem = document.querySelector("#items");
 let fieldTime = document.querySelector("#time");
