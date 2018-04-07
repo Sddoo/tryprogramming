@@ -74,7 +74,23 @@ window.addEventListener('DOMContentLoaded',function(){
 	let more = document.querySelector('.more'),
 		overlay = document.querySelector('.overlay'),
 		close = document.querySelector('.popup-close'),
-		grad = document.querySelector('.gradients');
+		grad = document.querySelector('.gradients'),
+		descriptions = document.querySelectorAll('.description-btn');
+
+	for (let i = 0; i < descriptions.length; i++){
+		descriptions[i].addEventListener('click', function(){
+		this.classList.add('more-splash');
+		overlay.style.display = 'block';
+		grad.style.display = 'block';
+		document.body.style.overflow = 'hidden';
+		let timeout = setTimeout(function()
+		{
+			grad.style.display = 'none';
+			console.log('fdsfds');
+		}, 2500);
+    clearTimeout(timeout);
+	});
+  }
 
 	more.addEventListener('click', function(){
 		this.classList.add('more-splash');
@@ -86,6 +102,7 @@ window.addEventListener('DOMContentLoaded',function(){
 			grad.style.display = 'none';
 			console.log('fdsfds');
 		}, 2500);
+    clearTimeout(timeout);
 	});
 
 	close.addEventListener('click', function(){
