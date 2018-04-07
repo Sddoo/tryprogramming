@@ -88,7 +88,6 @@ window.addEventListener('DOMContentLoaded',function(){
 			grad.style.display = 'none';
 			console.log('fdsfds');
 		}, 2500);
-    clearTimeout(timeout);
 	});
   }
 
@@ -102,7 +101,6 @@ window.addEventListener('DOMContentLoaded',function(){
 			grad.style.display = 'none';
 			console.log('fdsfds');
 		}, 2500);
-    clearTimeout(timeout);
 	});
 
 	close.addEventListener('click', function(){
