@@ -1,11 +1,11 @@
 $(document).ready(function(){
-	$('.main_btn, .main_btna, .main_nav nav ul li a:nth-child(1)').on('click', function(){
+	$('.main_btn, .main_btna, ul li:nth-child(2)').on('click', function(){
 		$('.overlay').fadeToggle('slow');
-		$('.modal').show('slow');
+		$('.modal').slideDown('slow');
 	});
 
 	$('.close').on('click', function(){
 		$('.overlay').fadeToggle('slow');
-		$('.modal').hide('slow');
+		$('.modal').slideUp('slow');
 	});
 });
